@@ -16,7 +16,7 @@ char	*ft_strcpy(char *dest, char *src) //function to copy the content of one str
 		i++;
 	}
 	dest[i] = '\0';
-	return (dest);
+	return (dest); //returning the value of 'result'
 }
 
 int        main(void)

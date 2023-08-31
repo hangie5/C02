@@ -9,7 +9,7 @@ char	*ft_strcpy(char *dest, char *src) //function to copy the content of one str
 	i = 0;
 	while (src[i] != '\0') //checks whether the character at the current position 'i' in the character array 'src' is not equal to the null terminiator '\0'
 		//src[i] accesses the character at the index 'i' in the array 'src'. 
-		//a string is an array of characters amd each character in the array is accessed using an index.
+		//a string is an array of characters and each character in the array is accessed using an index.
 		//'\0' is the null terminator character. the null terminator is used to mark the end of a string. the character has the ASCII value 0.
 	{
 		dest[i] = src[i]; //this line is copying the character at index 'i' from the 'src' string to the corresponding index 'i'
@@ -19,12 +19,14 @@ char	*ft_strcpy(char *dest, char *src) //function to copy the content of one str
 	return (dest);
 }
 
-int	main()
+int        main(void)
 {
-	char src[] = "lol";
-	char src1[] = "lol";
-	char dest[] = "Wo";
-	char dest1[] = "Wo";
-	printf("%s", ft_strcpy(dest, src));
-	printf("\n%s", strcpy(dest1, src1));
+	char string[10] = "Helloguys";
+	char string2[10];
+	char *ptr;
+	char *ptr2;
+
+	ptr = string;
+	ptr2 = string2;
+	printf("%s", ft_strcpy(ptr, ptr2));
 }

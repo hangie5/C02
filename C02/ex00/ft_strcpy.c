@@ -20,15 +20,12 @@ char	*ft_strcpy(char *dest, char *src) //function to copy the content of one str
 	return (dest); //return a pointer to the destination string (not necessary but follows the convention)
 }
 
-int        main(void)
+int	main()
 {
-	char string[10] = "Helloguys"; //initialize 'Helloguys"
-	char string2[10]; 
-	char *ptr; //declare the pointer variable 'ptr'
-	char *ptr2; //declare the pointer variable 'ptr2'
-
-	ptr = string; //assign the address of 'string' to 'ptr'
-	ptr2 = string2; //assign the address of 'string2' to 'ptr2'
-	printf("%s", ft_strcpy(ptr, ptr2)); // call the ft_strcpy function to copy the contents of ptr2 (string2) to ptr (string)
-    	//the result is stored in 'ptr' (string)
+	char src[] = "hello";
+	char src1[] = "hello";
+	char dest[] = "lo";
+	char dest1[] = "lo";
+	printf("%s", ft_strcpy(dest, src));
+	printf("\n%s", strcpy(dest1, src1));
 }
